@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+<!-- Hétfő -->
+	<ora id="GEIAL333-B" tipus="Előadás">
+		<targy>WEB-es alkalmazások fejlesztése</targy>
+		<idopont nap="Hétfő" tol="10:00" ig="12:00"/>
+		<helyszin>Informatika épület 101-es terem</helyszin>
+		<oktato>Krizsán Zoltán</oktato>
+		<szak>Mérnökinformatikus, Programtervező informatikus</szak>
+	</ora>
+	<ora id="GEIAL331-B" tipus="Előadás">
+		<targy>WEB technológiák</targy>
+		<idopont nap="Hétfő" tol="12:00" ig="14:00"/>
+		<helyszin>A1, 305. terem</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAK130-B" tipus="Előadás">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont nap="Hétfő" tol="14:00" ig="17:00"/>
+		<helyszin>A1, XXXII. terem</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>Mérnökinformatikus, Programtervező informatikus</szak>
+	</ora>
+<!-- Kedd -->
+	<ora id="GEIAL30A-B" tipus="Előadás">
+		<targy>Windows rendszergazda</targy>
+		<idopont nap="Kedd" tol="8:00" ig="10:00"/>
+		<helyszin>Informatika épület 101-es terem</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAL333-B" tipus="Gyakorlat">
+		<targy>WEB-es alkalmazások fejlesztése</targy>
+		<idopont nap="Kedd" tol="10:00" ig="12:00"/>
+		<helyszin>Informatika épület 101-es terem</helyszin>
+		<oktato>Krizsán Zoltán</oktato>
+		<szak>Mérnökinformatikus, Programtervező informatikus</szak>
+	</ora>
+	<ora id="GEIAL332-B" tipus="Előadás">
+		<targy>Adatkezelés XML környezetben</targy>
+		<idopont nap="Kedd" tol="12:00" ig="14:00"/>
+		<helyszin>A2, I. terem</helyszin>
+		<oktato>Bednarik Zoltán</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAL332-B" tipus="Gyakorlat">
+		<targy>Adatkezelés XML környezetben</targy>
+		<idopont nap="Kedd" tol="14:00" ig="16:00"/>
+		<helyszin>Informatika épület 103-as terem</helyszin>
+		<oktato>Bednarik Zoltán</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAL331-B" tipus="Gyakorlat">
+		<targy>WEB technológiák</targy>
+		<idopont nap="Kedd" tol="16:00" ig="18:00"/>
+		<helyszin>Informatika épület 103-as terem</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAK130-B" tipus="Gyakorlat">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont nap="Kedd" tol="18:00" ig="19:00"/>
+		<helyszin>Informatika épület 15-ös terem</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>Mérnökinformatikus, Programtervező informatikus</szak>
+	</ora>
+<!-- Szerda -->
+	<ora id="GEIAL31H-B" tipus="Gyakorlat">
+		<targy>Szoftvertesztelés</targy>
+		<idopont nap="Szerda" tol="8:00" ig="10:00"/>
+		<helyszin>Informatika épület 103-as terem</helyszin>
+		<oktato>Kunné Tamás Judit</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAL31H-B" tipus="Előadás">
+		<targy>Szoftvertesztelés</targy>
+		<idopont nap="Szerda" tol="10:00" ig="12:00"/>
+		<helyszin>Informatika épület 103-as terem</helyszin>
+		<oktato>Tompa Tamás</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAK120-B" tipus="Gyakorlat">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont nap="Szerda" tol="12:00" ig="14:00"/>
+		<helyszin>Informatika épület 15-ös terem</helyszin>
+		<oktato>Dr. Kulcsárné Dr. Forrai Mónika</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	<ora id="GEIAK120-B" tipus="Előadás">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont nap="Szerda" tol="14:00" ig="16:00"/>
+		<helyszin>A1, 14-es terem</helyszin>
+		<oktato>Dr. Dadvandipour Samad</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+<!-- Csütörtök -->
+	<ora id="GEIAL30A-B" tipus="Gyakorlat">
+		<targy>Windows rendszergazda</targy>
+		<idopont nap="Csütörtök" tol="10:00" ig="12:00"/>
+		<helyszin>Informatika épület 103-es terem</helyszin>
+		<oktato>Wagner György</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+</orarend>

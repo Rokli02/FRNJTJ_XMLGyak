@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia id="TETH_0921001">
+	<cim>Tárgyalás a természettudományok helyzetéről</cim>
+	<hallgatok>
+		<hallgato>
+			<nev>Markó Roland</nev>
+			<lakcim>Eger, Sétáló utca 42</lakcim>
+		</hallgato>
+		<hallgato>
+			<nev>Edl Levente</nev>
+			<lakcim>Miskolc, fő út 105</lakcim>
+		</hallgato>
+	</hallgatok>
+	<helyszin>Miskolc, Egyetem Város, E/7 irodaépület</helyszin>
+	<eloado>
+		<nev>Mészáros Tibor</nev>
+		<adoszam>17385136789013</adoszam>
+		<lakcim>Kislator, Kis utca 1</lakcim>
+	</eloado>
+	<datum>09/21/2021</datum>
+</konferencia>

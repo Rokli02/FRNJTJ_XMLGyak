@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+	margin: 8% 20%;
+	background-color: #55ad64;
+	font-weight: 500;
+	
+}
+
+table, td {
+	border: 2px double black;
+	background-color: #8fe39d;
+}
+
+td:nth-child(2) {
+	background-color: #afe3b8;
+}
+
+table {
+	padding: 3px;
+	border-radius: 10px;
+}
