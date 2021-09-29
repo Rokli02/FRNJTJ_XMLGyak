@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <!ELEMENT orarend (ora+)>
     <!ELEMENT ora (targy, idopont, helyszin, oktato+, szak+)>
         <!ATTLIST ora id CDATA #REQUIRED>

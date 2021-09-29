@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE model SYSTEM "MR_ertodtd.dtd">
+
+<model>
+    <A Aa="og513">
+        <Ab>
+            <Ax>ax1</Ax>
+            <Ay>ay1</Ay>
+        </Ab>
+        <Ab>
+            <Ax>ax2</Ax>
+            <Ay>ay2</Ay>
+        </Ab>
+        <Ac>
+            <Ad>ad1</Ad>
+            <Ae>ae1</Ae>
+        </Ac>
+    </A>
+    <AB ABa="og513" ABb="og256">
+        <ABc>abc1</ABc>
+    </AB>
+    <B Ba="og256" BC="og384">
+        <Bb>
+            <Bbx>bbx1</Bbx>
+            <Bby>bby1</Bby>
+        </Bb>
+    </B>
+    <C Ca="og384">
+        <Cb>cb1</Cb>
+    </C>
+</model>

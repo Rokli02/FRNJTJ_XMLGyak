@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE adatbazis [
+    <!ELEMENT adatbazis (dolgozok)>
+        <!ELEMENT dolgozok (dolgozo+)>
+            <!ELEMENT dolgozo (nev, fizetes)>
+            <!ATTLIST dolgozo kod ID #REQUIRED>
+                <!ELEMENT nev (#PCDATA)>
+                <!ELEMENT fizetes (#PCDATA)>
+]>
+
+<adatbazis>
+    <dolgozok>
+        <dolgozo kod="ME060914">
+            <nev>Gáspár Elemér</nev>
+            <fizetes>180000</fizetes>
+        </dolgozo>
+        <dolgozo kod="ME100424">
+            <nev>Maksó Thomas</nev>
+            <fizetes>440500</fizetes>
+        </dolgozo>
+        <dolgozo kod="ME000830">
+            <nev>Olasz Pál</nev>
+            <fizetes>223900</fizetes>
+        </dolgozo>
+    </dolgozok>
+</adatbazis>
