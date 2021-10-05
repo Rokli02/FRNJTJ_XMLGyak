@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MR_konyv.xsd">
+	<konyv id="B196443FO">
+		<cim>Mesterséges intelligencia</cim>
+		<kiadas>2005</kiadas>
+		<kiado>Miskolci Egyetem</kiado>
+		<szerzo>Szabó Gábor</szerzo>
+		<abstract>absztakt</abstract>
+	</konyv>
+	<konyv id="B516751DI">
+		<cim>C programozási nyelv alapjai</cim>
+		<kiadas>1991</kiadas>
+		<kiado>Szabó és társa Zrt.</kiado>
+		<szerzo>Boglár Klára</szerzo>
+		<szerzo>Kovács Tibor Elemér</szerzo>
+	</konyv>
+	<konyv id="B156349BI">
+		<cim>Bash Script a gyakorlatban</cim>
+		<kiadas>2001</kiadas>
+		<kiado>Budapest Konyv kiado</kiado>
+		<szerzo>Balogh Gabriella</szerzo>
+	</konyv>
+</konyvek>
