@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<er xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MR_ertoxsd.xsd">
+    <A a="A147">
+        <b>
+            <x>xes</x>
+            <y>yos</y>
+        </b>
+        <b>
+            <x>xs</x>
+            <y>ys</y>
+        </b>
+        <c>
+            <d>deb</d>
+            <e>ete</e>
+        </c>
+    </A>
+    <B a="B369" cref="C258">
+        <b>
+            <x>bix</x>
+            <y>boy</y>
+        </b>
+    </B>
+    <C a="C258">
+        <b>boc</b>
+    </C>
+    <AB aref="A147" bref="B369">
+        <c>cab</c>
+    </AB>
+</er>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <xs:element name="er">
+        <xs:complexType>
+            <xs:sequence>
+<!-- A -->      <xs:element name="A" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="b" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="x" type="xs:string"/>
+                                        <xs:element name="y" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="c">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="d" type="xs:string"/>
+                                        <xs:element name="e" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="a" type="xs:ID" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+<!-- B -->      <xs:element name="B" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="b">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="x" type="xs:string"/>
+                                        <xs:element name="y" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="a" type="xs:ID" use="required"/>
+                        <xs:attribute name="cref" type="xs:IDREF"/>
+                    </xs:complexType>
+                </xs:element>
+<!-- C -->      <xs:element name="C" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="b" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="a" type="xs:ID" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+<!--AB -->      <xs:element name="AB" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="c" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="aref" type="xs:IDREF"/>
+                        <xs:attribute name="bref" type="xs:IDREF"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Akey">
+            <xs:selector xpath="A"/>
+            <xs:field xpath="@a"/>
+        </xs:key>
+        <xs:key name="Bkey">
+            <xs:selector xpath="B"/>
+            <xs:field xpath="@a"/>
+        </xs:key>
+        <xs:key name="Ckey">
+            <xs:selector xpath="C"/>
+            <xs:field xpath="@a"/>
+        </xs:key>
+        <xs:keyref refer="Ckey" name="BrC">
+            <xs:selector xpath="B"/>
+            <xs:field xpath="@cref"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="Akey" name="BrA">
+            <xs:selector xpath="AB"/>
+            <xs:field xpath="@aref"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="Bkey" name="ArB">
+            <xs:selector xpath="AB"/>
+            <xs:field xpath="@bref"></xs:field>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
