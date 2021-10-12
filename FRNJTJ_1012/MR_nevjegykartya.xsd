@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+<xs:complexType name="cim">
+    <xs:sequence>
+        <xs:element name="iranyitoszam" type="xs:int"/>
+        <xs:element name="varos" type="xs:string"/>
+        <xs:element name="utca" type="xs:string"/>
+        <xs:element name="hazszam" type="xs:int"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="telefonsz">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="11"/>
+        <xs:maxLength value="11"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="ceg">
+    <xs:sequence>
+        <xs:element name="nev" type="xs:string"/>
+        <xs:element name="cim" type="cim"/>
+        <xs:element name="telefonszam" type="telefonsz"/>
+        <xs:element name="weblap" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:element name="nevjegykartyak">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nevjegykartya" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nev" type="xs:string"/>
+                        <xs:element name="ceg" type="ceg"/>
+                        <xs:element name="beosztas" type="xs:string"/>
+                        <xs:element name="telefonszam" type="telefonsz"/>
+                        <xs:element name="email" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

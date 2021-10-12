@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MR_nevjegykartya.xsd">
+    <nevjegykartya>
+        <nev>Markó Roland</nev>
+        <ceg>
+            <nev>JSzF</nev>
+            <cim>
+                <iranyitoszam>4300</iranyitoszam>
+                <varos>Miskolc-Tapolca</varos>
+                <utca>Ackác utca</utca>
+                <hazszam>123</hazszam>
+            </cim>
+            <telefonszam>06307203123</telefonszam>
+            <weblap>https://elearning.uni-miskolc.hu/zart/mod/resource/view.php?id=64456</weblap>
+        </ceg>
+        <beosztas>Takarító</beosztas>
+        <telefonszam>06307193123</telefonszam>
+        <email>marko.roland@student.uni-miskolc.hu</email>
+    </nevjegykartya>
+    <nevjegykartya>
+        <nev>Lakatos Lajos</nev>
+        <ceg>
+            <nev>Elgi</nev>
+            <cim>
+                <iranyitoszam>4301</iranyitoszam>
+                <varos>Miskolc-Lillafüred</varos>
+                <utca>Eső út</utca>
+                <hazszam>43</hazszam>
+            </cim>
+            <telefonszam>06307203123</telefonszam>
+            <weblap>http://moodle.iit.uni-miskolc.hu/pluginfile.php/2151/mod_resource/content/2/ora_04.pdf</weblap>
+        </ceg>
+        <beosztas>Lakatos</beosztas>
+        <telefonszam>06307193123</telefonszam>
+        <email>lakcsi_mecs@freemail.hu</email>
+    </nevjegykartya>
+</nevjegykartyak>
