@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<s:konyvek xmlns:s="sema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="sema MR_konyvl.xsd"
+        xmlns:m="modul">
+    <konyv s:isbn="89412312">
+        <cim>Boros mámor</cim>
+        <szerzo>Dugovics András</szerzo>
+        <szereplo>
+            <m:nev>Gál Béla</m:nev>
+            <m:baratja>Tekla Miksa</m:baratja>
+            <m:szuletett>2000-10-19</m:szuletett>
+            <m:jellemzes>Kedves, Irigy, Fukar</m:jellemzes>
+        </szereplo>
+        <szereplo2>
+            <m:nev>Tekla Miksa</m:nev>
+            <m:szuletett>1965-12-24</m:szuletett>
+            <m:jellemzes>Odaadó, Jószívű, Önzetlen</m:jellemzes>
+        </szereplo2>
+    </konyv>
+</s:konyvek>
