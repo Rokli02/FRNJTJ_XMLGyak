@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="szemely">
+    <xs:sequence>
+        <xs:element name="nev" type="sajatnev"/>
+        <xs:element name="kor" type="xs:int"/>
+        <xs:element name="varos" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+</xs:complexType>
+<xs:simpleType name="sajatnev">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[\w]+\s[\w]+"/>
+    </xs:restriction>
+</xs:simpleType>
+    <xs:element name="szemelyek">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="szemely" type="szemely" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<szemelyek>
+    <szemely id="125412">
+        <nev>Markó Roland</nev>
+        <kor>21</kor>
+        <varos>Bükkábrány</varos>
+    </szemely>
+    <szemely id="447858">
+        <nev>Molnár Marko</nev>
+        <kor>19</kor>
+        <varos>Verpelét</varos>
+    </szemely>
+    <szemely id="238978">
+        <nev>Edl Levente</nev>
+        <kor>22</kor>
+        <varos>Ózd</varos>
+    </szemely>
+</szemelyek>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT szemelyek (szemely+)>
+<!ATTLIST szemelyek xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST szemelyek xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+    <!ELEMENT szemely (nev, kor, varos)>
+    <!ATTLIST szemely id CDATA #REQUIRED>
+        <!ELEMENT nev (#PCDATA)>
+        <!ELEMENT kor (#PCDATA)>
+        <!ELEMENT varos (#PCDATA)>
