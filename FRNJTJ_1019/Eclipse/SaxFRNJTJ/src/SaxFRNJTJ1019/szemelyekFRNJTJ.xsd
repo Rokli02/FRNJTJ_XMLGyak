@@ -14,11 +14,11 @@
         <xs:pattern value="[\w]+\s[\w]+"/>
     </xs:restriction>
 </xs:simpleType>
-    <xs:element name="szemelyek">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="szemely" type="szemely" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+<xs:element name="szemelyek">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="szemely" type="szemely" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
 </xs:schema>
