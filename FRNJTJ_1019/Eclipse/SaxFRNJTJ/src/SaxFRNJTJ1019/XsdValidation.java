@@ -17,15 +17,19 @@ public class XsdValidation {
 		final String W3C_XML_SCHEMA = "http://www.w3.org/2001/XMLSchema";
 		final String JAXP_SCHEMA_SOURCE = "http://java.sun.com/xml/jaxp/properties/schemaSource";
 		final String MY_SCHEMA_SOURCE = "szemelyekFRNJTJ.xsd";
+		
 		try {
 			
 			SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
 			saxParserFactory.setValidating(true);
 			saxParserFactory.setNamespaceAware(true);
+			
 			SAXParser saxParser = saxParserFactory.newSAXParser();
 			saxParser.setProperty(JAXP_SCHEMA_LANGUAGE, W3C_XML_SCHEMA);
 			saxParser.setProperty(JAXP_SCHEMA_SOURCE, MY_SCHEMA_SOURCE);
-			SaxHandler handler = new SaxHandler();
+			
+			SaxValidationHandler handler = new SaxValidationHandler();
+			
 			saxParser.parse(new File("src/SaxFRNJTJ1019/szemelyekFRNJTJ.xml"), handler);
 			
 			System.out.println("Succesful Validation!");
