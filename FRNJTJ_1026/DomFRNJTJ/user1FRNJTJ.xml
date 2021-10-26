@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="domfrnjtj">
+  <user id="1">
+    <firstname>Roland</firstname>
+    <lastname>Markó</lastname>
+    <profession>Hallgató</profession>
+  </user>
+  <user id="2">
+    <firstname>Károly</firstname>
+    <lastname>Okos</lastname>
+    <profession>Biztonsági őr</profession>
+  </user>
+  <user id="3">
+    <firstname>Máté</firstname>
+    <lastname>Hazadi</lastname>
+    <profession>Bányász</profession>
+  </user>
+</users>
