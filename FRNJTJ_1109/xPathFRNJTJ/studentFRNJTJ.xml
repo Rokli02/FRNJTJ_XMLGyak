@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentFRNJTJ.xsd">
+    <student id="01">
+        <keresztnev>Roland</keresztnev>
+        <vezeteknev>Markó</vezeteknev>
+        <becenev>Roli</becenev>
+        <kor>21</kor>
+    </student>
+    <student id="02">
+        <keresztnev>Tom</keresztnev>
+        <vezeteknev>Whisper</vezeteknev>
+        <becenev>wisdom</becenev>
+        <kor>17</kor>
+    </student>
+    <student id="03">
+        <keresztnev>Tamás</keresztnev>
+        <vezeteknev>Baz</vezeteknev>
+        <becenev>Tomi</becenev>
+        <kor>32</kor>
+    </student>
+</class>
