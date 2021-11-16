@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet href="studentFRNJTJ.xsl" type="text/xsl"?> -->
+
+<class>
+    <student id="01">
+        <vezeteknev>Markó</vezeteknev>
+        <keresztnev>Roland</keresztnev>
+        <becenev>Roli</becenev>
+        <kor>21</kor>
+    </student>
+    <student id="02">
+        <vezeteknev>Whisper</vezeteknev>
+        <keresztnev>Tom</keresztnev>
+        <becenev>wisdom</becenev>
+        <kor>17</kor>
+    </student>
+    <student id="03">
+        <vezeteknev>Baz</vezeteknev>
+        <keresztnev>Tamás</keresztnev>
+        <becenev>Tomi</becenev>
+        <kor>32</kor>
+    </student>
+</class>
