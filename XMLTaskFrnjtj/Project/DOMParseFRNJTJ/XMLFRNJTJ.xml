@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ER xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaFRNJTJ.xsd">
+    <Szemelyek>
+        <Szemely azonosito="951264TA">
+            <nev>Markó Roland</nev>
+            <lakcim>Bükkábrány, Arany János utca, 23</lakcim>
+            <hitelkartyaszam>12412323-61241235</hitelkartyaszam>
+        </Szemely>
+        <Szemely azonosito="312571DA">
+            <nev>Lakatos Béla</nev>
+            <lakcim>Sály, Fő út, 76</lakcim>
+            <hitelkartyaszam>12318321-61543235</hitelkartyaszam>
+        </Szemely>
+        <Szemely azonosito="714232TA">
+            <nev>Lengyel Bertalan</nev>
+            <lakcim>Balogház, Kanizsa út, 64</lakcim>
+            <hitelkartyaszam>19512323-62433135</hitelkartyaszam>
+        </Szemely>
+        <Szemely azonosito="614123TA">
+            <nev>Szabó Lajos</nev>
+            <lakcim>Épphely, Boldog utca, 56</lakcim>
+            <hitelkartyaszam>73522323-62445325</hitelkartyaszam>
+        </Szemely>
+        <Szemely azonosito="612432TA">
+            <nev>Hazadi Vendel</nev>
+            <lakcim>Lator, Erdő út, 14</lakcim>
+            <hitelkartyaszam>49152423-62444835</hitelkartyaszam>
+        </Szemely>
+        <Szemely azonosito="965414TA">
+            <nev>Nándor Salamon</nev>
+            <lakcim>Budapest, Szent Endre út, 97</lakcim>
+            <hitelkartyaszam>13153323-63441335</hitelkartyaszam>
+        </Szemely>
+    </Szemelyek>
+
+    <Telepulesek>
+        <Telepules iranyitoszam="1000">
+            <nev>Budapest</nev>
+            <megye>Pest</megye>
+        </Telepules>
+        <Telepules iranyitoszam="1001">
+            <nev>Budapest</nev>
+            <megye>Pest</megye>
+        </Telepules>
+        <Telepules iranyitoszam="3422">
+            <nev>Bükkábrány</nev>
+            <megye>Borsod-Abaúj-Zemplén</megye>
+        </Telepules>
+        <Telepules iranyitoszam="3400">
+            <nev>Budapest</nev>
+            <megye>Borsod-Abaúj-Zemplén</megye>
+        </Telepules>
+        <Telepules iranyitoszam="3300">
+            <nev>Eger</nev>
+            <megye>Heves</megye>
+        </Telepules>
+        <Telepules iranyitoszam="2574">
+            <nev>Kiskunfogadó</nev>
+            <megye>Szabolcs</megye>
+        </Telepules>
+    </Telepulesek>
+
+    <Kolcsonzok>
+        <Kolcsonzo telephelykod="1" iranyitoszam="1001">
+                <cegnev>Ubihard</cegnev>
+                <adoszam>56125134321</adoszam>
+                <alkalmazottszam>927</alkalmazottszam>
+        </Kolcsonzo>
+        <Kolcsonzo telephelykod="2" iranyitoszam="3300">
+            <cegnev>Minecoin</cegnev>
+            <adoszam>54125134123</adoszam>
+            <alkalmazottszam>76</alkalmazottszam>
+        </Kolcsonzo>
+        <Kolcsonzo telephelykod="3" iranyitoszam="3422">
+            <cegnev>BitHuf</cegnev>
+            <adoszam>85671279924</adoszam>
+            <alkalmazottszam>412</alkalmazottszam>
+        </Kolcsonzo>
+        <Kolcsonzo telephelykod="4" iranyitoszam="2574">
+            <cegnev>Opel</cegnev>
+            <adoszam>16802211838</adoszam>
+            <alkalmazottszam>54</alkalmazottszam>
+        </Kolcsonzo>
+        <Kolcsonzo telephelykod="5" iranyitoszam="3422">
+            <cegnev>JSzF</cegnev>
+            <adoszam>70746874303</adoszam>
+            <alkalmazottszam>341</alkalmazottszam>
+        </Kolcsonzo>
+        <Kolcsonzo telephelykod="6" iranyitoszam="1001">
+            <cegnev>DollLove</cegnev>
+            <adoszam>91394880987</adoszam>
+            <alkalmazottszam>320</alkalmazottszam>
+        </Kolcsonzo>
+        <Kolcsonzo telephelykod="7" iranyitoszam="1001">
+            <cegnev>Minecoin</cegnev>
+            <adoszam>54151908123</adoszam>
+            <alkalmazottszam>5</alkalmazottszam>
+        </Kolcsonzo>
+    </Kolcsonzok>
+
+    <Jarmuvek>
+        <Jarmu alvazszam="512312331" telephelykod="2">
+            <tipus>Corsa</tipus>
+            <szinek>
+                <szin>Fekete</szin>
+            </szinek>
+            <marka>Opel</marka>
+            <evjarat>1998</evjarat>
+            <uzemanyag>Benzin</uzemanyag>
+        </Jarmu>
+        <Jarmu alvazszam="612312331" telephelykod="2">
+            <tipus>Golf</tipus>
+            <szinek>
+                <szin>Piros</szin>
+            </szinek>
+            <marka>VolksWagen</marka>
+            <evjarat>2010</evjarat>
+            <uzemanyag>Elektromos</uzemanyag>
+        </Jarmu>
+        <Jarmu alvazszam="639627878" telephelykod="3">
+            <tipus>Megan</tipus>
+            <szinek>
+                <szin>Szürke</szin>
+            </szinek>
+            <marka>Renault</marka>
+            <evjarat>1999</evjarat>
+            <uzemanyag>Benzin</uzemanyag>
+        </Jarmu>
+        <Jarmu alvazszam="383906114" telephelykod="2">
+            <tipus>Viper</tipus>
+            <szinek>
+                <szin>Piros</szin>
+                <szin>Narancs</szin>
+                <szin>Sárga</szin>
+            </szinek>
+            <marka>Dodge</marka>
+            <evjarat>2012</evjarat>
+            <uzemanyag>Benzin</uzemanyag>
+        </Jarmu>
+        <Jarmu alvazszam="949498212" telephelykod="1">
+            <tipus>Corsa</tipus>
+            <szinek>
+                <szin>Fekete</szin>
+            </szinek>
+            <marka>Opel</marka>
+            <evjarat>2020</evjarat>
+            <uzemanyag>Hibrid</uzemanyag>
+        </Jarmu>
+        <Jarmu alvazszam="834834873" telephelykod="6">
+            <tipus>Touran</tipus>
+            <szinek>
+                <szin>Sötétkék</szin>
+            </szinek>
+            <marka>VolksWagen</marka>
+            <evjarat>2004</evjarat>
+            <uzemanyag>Dízel</uzemanyag>
+        </Jarmu>
+    </Jarmuvek>
+
+    <Berlesek>
+        <Berles telephelykod="2" azonosito="714232TA">
+            <idotartam>
+                <kezdet>2000-10-12</kezdet>
+                <veg>2000-10-13</veg>
+            </idotartam>
+        </Berles>
+        <Berles telephelykod="6" azonosito="614123TA">
+            <idotartam>
+                <kezdet>2020-12-20</kezdet>
+                <veg>2021-01-05</veg>
+            </idotartam>
+        </Berles>
+        <Berles telephelykod="3" azonosito="312571DA">
+            <idotartam>
+                <kezdet>2021-10-15</kezdet>
+            </idotartam>
+        </Berles>
+        <Berles telephelykod="2" azonosito="312571DA">
+            <idotartam>
+                <kezdet>2019-08-25</kezdet>
+                <veg>2021-04-10</veg>
+            </idotartam>
+        </Berles>
+    </Berlesek>
+</ER>

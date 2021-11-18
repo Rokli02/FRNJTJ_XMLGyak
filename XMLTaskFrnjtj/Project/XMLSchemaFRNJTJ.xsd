@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ER">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Szemelyek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Szemely" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+<!--                                        <xs:element name="azonosito" type="xs:string"/> -->
+                                        <xs:element name="nev" type="xs:string"/>
+                                        <xs:element name="lakcim" type="xs:string"/>
+                                        <xs:element name="hitelkartyaszam" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="azonosito" type="igazolvanyAzonosito" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Telepulesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Telepules" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+<!--                                        <xs:element name="iranyitoszam" type="iranyitosz"/> -->
+                                        <xs:element name="nev" type="xs:string"/>
+                                        <xs:element name="megye" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="iranyitoszam" type="iranyitosz" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Kolcsonzok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kolcsonzo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+<!--                                        <xs:element name="telephelykod" type="xs:string"/> -->
+                                        <xs:element name="cegnev" type="xs:string"/>
+                                        <xs:element name="adoszam" type="adoszam"/>
+                                        <xs:element name="alkalmazottszam" type="alkalmazottakSzama"/> 
+                                    </xs:sequence>
+                                    <xs:attribute name="telephelykod" type="xs:string" use="required"/>
+                                    <xs:attribute name="iranyitoszam" type="iranyitosz" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Jarmuvek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Jarmu" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!-- <xs:element name="alvazszam" type="xs:string"/> -->
+                                        <xs:element name="tipus" type="xs:string"/>
+                                        <xs:element name="szinek">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="szin" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="marka" type="xs:string"/>
+                                        <xs:element name="evjarat" type="xs:gYear"/>
+                                        <xs:element name="uzemanyag " type="uzemanyag"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="alvazszam" type="xs:string" use="required"/>
+                                    <xs:attribute name="telephelykod" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Berlesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Berles" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="idotartam">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="kezdet" type="xs:date"/>
+                                                    <xs:element name="veg" type="xs:date" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="telephelykod" type="xs:string" use="required"/>
+                                    <xs:attribute name="azonosito" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="SzemelyK">
+            <xs:selector xpath="Szemelyek/Szemely"/>
+            <xs:field xpath="@azonosito"/>
+        </xs:key>
+        <xs:key name="TelepulesK">
+            <xs:selector xpath="Telepulesek/Telepules"/>
+            <xs:field xpath="@iranyitoszam"/>
+        </xs:key>
+        <xs:key name="KolcsonzoK">
+            <xs:selector xpath="Kolcsonzok/Kolcsonzo"/>
+            <xs:field xpath="@telephelykod"/>
+        </xs:key>
+        <xs:key name="JarmuK">
+            <xs:selector xpath="Jarmuvek/Jarmu"/>
+            <xs:field xpath="@alvazszam"/>
+        </xs:key>
+
+        <xs:keyref refer="SzemelyK" name="BerlesSzemely">
+            <xs:selector xpath="Berlesek/Berles"/>
+            <xs:field xpath="@azonosito"/>
+        </xs:keyref>
+        <xs:keyref refer="KolcsonzoK" name="BerlesKolcsonzo">
+            <xs:selector xpath="Berlesek/Berles"/>
+            <xs:field xpath="@telephelykod"/>
+        </xs:keyref>
+        <xs:keyref refer="TelepulesK" name="KolcsonzoFK">
+            <xs:selector xpath="Kolcsonzok/Kolcsonzo"/>
+            <xs:field xpath="@iranyitoszam"/>
+        </xs:keyref>
+        <xs:keyref refer="KolcsonzoK" name="JarmuFK">
+            <xs:selector xpath="Jarmuvek/Jarmu"/>
+            <xs:field xpath="@telephelykod"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:simpleType name="alkalmazottakSzama">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="iranyitosz">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1000"/>
+            <xs:maxExclusive value="5000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="adoszam">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="11"/>
+            <xs:maxLength value="11"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="igazolvanyAzonosito">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]{6}[A-Z]A)"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="uzemanyag">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Benzin"/>
+            <xs:enumeration value="Dízel"/>
+            <xs:enumeration value="Elektromos"/>
+            <xs:enumeration value="Hibrid"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
