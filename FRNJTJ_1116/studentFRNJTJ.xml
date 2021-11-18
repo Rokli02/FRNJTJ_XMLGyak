@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-stylesheet href="studentFRNJTJ.xsl" type="text/xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="studentFRNJTJ.xsl"?> -->
 
 <class>
     <student id="01">
@@ -7,17 +7,20 @@
         <keresztnev>Roland</keresztnev>
         <becenev>Roli</becenev>
         <kor>21</kor>
+        <fizetes>650000</fizetes>
     </student>
     <student id="02">
         <vezeteknev>Whisper</vezeteknev>
         <keresztnev>Tom</keresztnev>
         <becenev>wisdom</becenev>
         <kor>17</kor>
+        <fizetes>373000</fizetes>
     </student>
     <student id="03">
         <vezeteknev>Baz</vezeteknev>
         <keresztnev>Tamás</keresztnev>
         <becenev>Tomi</becenev>
         <kor>32</kor>
+        <fizetes>97000</fizetes>
     </student>
 </class>

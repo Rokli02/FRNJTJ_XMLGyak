@@ -1,0 +1,60 @@
+<html>
+    <body>
+        <h2>MR apple- template</h2>
+            
+        <p>
+                    ID: 01
+            <br>
+                    Vezeteknev:
+        <span style="color:#369a36">Mark&oacute;</span>
+            <br>
+                    Keresztnev:
+        <span style="color:#bc6262">Roland</span>
+            <br>
+            <span>Roli</span>
+        Kor:
+        <span style="color:#6b6bff">21</span>
+            <br>
+                    Fizetes:
+        <span style="color:#ff2e2e">650000</span>
+            <br>
+        </p>
+            
+        <p>
+                    ID: 02
+            <br>
+                    Vezeteknev:
+        <span style="color:#369a36">Whisper</span>
+            <br>
+                    Keresztnev:
+        <span style="color:#bc6262">Tom</span>
+            <br>
+            <span>wisdom</span>
+        Kor:
+        <span style="color:#6b6bff">17</span>
+            <br>
+                    Fizetes:
+        <span style="color:#ff2e2e">373000</span>
+            <br>
+        </p>
+            
+        <p>
+                    ID: 03
+            <br>
+                    Vezeteknev:
+        <span style="color:#369a36">Baz</span>
+            <br>
+                    Keresztnev:
+        <span style="color:#bc6262">Tam&aacute;s</span>
+            <br>
+            <span>Tomi</span>
+        Kor:
+        <span style="color:#6b6bff">32</span>
+            <br>
+                    Fizetes:
+        <span style="color:#ff2e2e">97000</span>
+            <br>
+        </p>
+        
+    </body>
+</html>
