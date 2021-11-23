@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <table border="1">
+            <thead bgcolor="#baba69">
+                <tr>
+                    <th>ID</th><th>Vezetkenev</th><th>Keresztnev</th><th>Becenev</th><th>Fizetes</th><th>Fokozat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td><td>Marko</td><td>Roland</td><td>Roli</td><td>650000</td><td>Magas</td>
+                </tr>
+                <tr>
+                    <td>02</td><td>Whisper</td><td>Tom</td><td>wisdom</td><td>373000</td><td>Kozepes</td>
+                </tr>
+                <tr>
+                    <td>03</td><td>Baz</td><td>Tamas</td><td>Tomi</td><td>97000</td><td>Alacsony</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
